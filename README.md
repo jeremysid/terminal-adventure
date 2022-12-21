@@ -1,7 +1,7 @@
 # terminal-adventure
 ## Practice in Coding
 
-### Roadmap : 
+### Roadmap in C: 
 
 > 1st - 3rd Parts  [ Done ]
 
