@@ -1,5 +1,5 @@
 # terminal-adventure
-## Practice in C 
+## Practice in Coding
 
 ### Roadmap : 
 
