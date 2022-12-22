@@ -19,3 +19,19 @@ via Makefile: (in terminal)
        make up (compile and run unstable.c)
        
        make sta (compile and run stable.c)
+
+### Roadmap in Python: 
+
+> 1st - 3rd Parts  [ Done ]
+
+> Stable Path [in progress ]
+
+> Unstable Path [in progress (first)]
+
+
+## How to run:
+
+via Makefile: (in terminal)
+
+       make ma (runs main.py)
+       
