@@ -1,13 +1,15 @@
 #include<stdio.h>
+#include<string.h>
 #include"functions.h"
-#include "story_choices.h"
-#include "story.h"
 
 int startFunc(void) {
+
 firstPart();
 secondPart();
 }
+
 int exitFunc(void) {
+
 printf("Exit \n");
 }
 
@@ -27,13 +29,12 @@ void firstPart() {
 
 void secondPart() {
 
-	char introOne[] = {"Welcome, Pick from these options: "};
-	char options[] = {" Start(1) \n Exit(2)\n"};
+	char introOne[] = {"Welcome Pick from these options: Start(1), Exit(2) \n"};
 	int choice[20];
 
 	printf("%s\n", introOne);
-	printf("%s\n", options);
-	printf("Type your Choice\n >> ");
+	printf("Type your Choice\n");
+	printf(">> ");
 	scanf("%d", choice);
 
 	switch(*choice) {
@@ -54,7 +55,7 @@ void secondPart() {
 void thirdPart() {
 
 	char introTwo[] = {"Why do you exist?\n"};
-    char options[] = {"Pick from these options:\n Stable(1) = To get Stronger \n Unstable(2) = To get by\n"};
+    char options[] = {"pick from options: Stable(1), Unstable(2)\n"};
 	int choice[10];
 	
 	printf("%s", introTwo);
@@ -65,12 +66,12 @@ void thirdPart() {
 	switch(*choice) {
 		case 1:
 			printf("To get Stronger\n");
-			printf("???: hm interesting \n");
+			printf("???: I see well good LUCK \n");
 			continuePromptStable();
 			break;
 		case 2:
-			printf("To get by \n");
-			printf("???: well that's boring \n");
+			printf("To be Alive? \n");
+			printf("???: Interesting \n");
 			continuePromptUnstable();
 			break;
 	    default:
@@ -78,10 +79,37 @@ void thirdPart() {
 	}
 }
 
+void stablePath() {
+
+	printf("Well then, enjoy \n");
+	stablePathChoices();
+}
+void stablePathChoices() {
+
+	stablePartOne(); 
+}
+
+void stablePartOne() {
+
+	printf("Part One - Stable\n");
+	
+}
+
+void unstablePath() {
+
+	printf("How long will you last? \n");
+	unstablePathChoices();
+}
+
+void unstablePathChoices() {
+
+	printf("Unstable Path Choices \n");
+}
+
 void continuePromptStable() {
 
 	char continueIntro[] = {"Do you wish to Continue?\n"};
-	char options[] = {"Options: \n Yes(1)\n No(2) \n"};
+	char options[] = {"Options: Yes(1),No(2)\n"};
 	int choice[10];
 
 	printf("%s\n", continueIntro);
@@ -106,7 +134,7 @@ void continuePromptStable() {
 void continuePromptUnstable() {
 
 	char continueIntro[] = {"Do you wish to Continue?\n"};
-	char options[] = {"Options: \n Yes(1) \n No(2) \n"};
+	char options[] = {"Options: Yes(1),No(2)\n"};
 	int choice[10];
 
 	printf("%s\n", continueIntro);
@@ -129,14 +157,3 @@ void continuePromptUnstable() {
 
 }
 
-void stablePath() {
-
-	printf("Well then, enjoy \n");
-	stablePathChoices();
-}
-
-void unstablePath() {
-
-	printf("How long will you last? \n");
-	unstablePathChoices();
-}

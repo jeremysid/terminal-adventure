@@ -11,14 +11,21 @@ sta: s
 	clear
 	./stable
 
+test-ma: test-main
+	clear
+	./maintest
+
 main: main.c
 	gcc -o main main.c
 
-u: unstable.c
+unstable: unstable.c
 	gcc -o unstable unstable.c
 
-s: stable.c
+stable: stable.c
 	gcc -o stable stable.c
+
+test-main: maintest.c
+	gcc -o maintest maintest.c
 
 clean:
 	rm -r main unstable stable

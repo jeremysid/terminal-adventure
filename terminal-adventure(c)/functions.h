@@ -1,7 +1,13 @@
 #ifndef FUNCTIONS_H
-# define FUNCTIONS_H
+#define FUNCTIONS_H
+#include <stdio.h>
+
 // global variables
 char name[30];
+
+// global functions
+int startFunc(void);
+int exitFunc(void);
 
 // Intro
 void firstPart();
@@ -26,4 +32,5 @@ void unstablePartOne();
 void unstablePartTwo();
 void unstablePartThree();
 void unstablePartFour();
+
 #endif
