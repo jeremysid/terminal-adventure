@@ -1,4 +1,8 @@
 
+fu: full
+	clear
+	./full
+
 ma: main
 	clear
 	./main
@@ -14,6 +18,9 @@ sta: s
 test-ma: test-main
 	clear
 	./maintest
+
+fully: full.c
+	gcc -o full full.c
 
 main: main.c
 	gcc -o main main.c

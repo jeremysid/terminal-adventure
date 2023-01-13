@@ -1,7 +1,8 @@
 #include<stdio.h>
-#include"functions.h"
+#include "functions.h"
 #include "story_choices.h"
-#include "story.h"
+#include "stable.h"
+#include "unstable.h"
 
 int startFunc(void) {
 firstPart();
@@ -47,7 +48,6 @@ void secondPart() {
 		  exitFunc();
 
 	}
-
 
 }
 
@@ -140,3 +140,4 @@ void unstablePath() {
 	printf("How long will you last? \n");
 	unstablePathChoices();
 }
+

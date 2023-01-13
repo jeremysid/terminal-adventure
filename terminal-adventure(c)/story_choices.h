@@ -1,8 +1,8 @@
 #ifndef STORY_CHOICES_H
 #define STORY_CHOICES_H
 #include <stdio.h>
-#include "functions.h"
-#include "story.h"
+#include "stable.h"
+#include "unstable.h"
 
 void stablePathChoices() {
 	
