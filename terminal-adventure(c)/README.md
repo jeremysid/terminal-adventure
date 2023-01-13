@@ -7,7 +7,7 @@
 
 > Stable Path [in progress ]
 
-> Unstable Path [in progress (first)]
+> Unstable Path [in progress ]
 
 
 ## How to compile and run:
@@ -20,3 +20,4 @@ via Makefile: (in terminal)
        
        make sta (compile and run stable.c)
       
+       make fu (compile and run full.c)
